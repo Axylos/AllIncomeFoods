@@ -3,12 +3,11 @@ source 'http://rubygems.org'
 gem 'rails', '~> 3.1.12'
 gem 'pg', '~> 0.17.0'
 
+gem 'jquery-rails', '~> 1.0.2'
+gem "jquery_mobile_rails", "~> 1.3.2"
+
 # Keep around until RetailersController#get_geo_from_google is removed
 gem 'crack', '~> 0.1.8'
-
-# Assets
-gem 'sass', '~> 3.2.12'
-gem 'jquery-rails', '~> 1.0.2'
 
 # Automated cron jobs
 gem 'whenever', '~> 0.8.4', :require => false
@@ -16,6 +15,11 @@ gem 'whenever', '~> 0.8.4', :require => false
 # Geolocation tools
 gem 'geokit', '~> 1.6.7'
 gem 'geokit-rails', '~> 2.0.0'
+
+group :assets do
+  gem 'sass-rails',   '~> 3.1.7'
+  gem 'uglifier', '>= 1.0.3'
+end
 
 group :test do
   gem "capybara", "~> 2.1.0"
