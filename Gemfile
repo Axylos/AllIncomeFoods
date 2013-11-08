@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '~> 3.0.20'
+gem 'rails', '~> 3.1.12'
 gem 'pg', '~> 0.17.0'
 
 # Keep around until RetailersController#get_geo_from_google is removed
