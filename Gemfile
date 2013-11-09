@@ -3,6 +3,9 @@ source 'http://rubygems.org'
 gem 'rails', '~> 4.0.1'
 gem 'pg', '~> 0.17.0'
 
+# Assets
+gem 'sass-rails', '~> 4.0.1'
+gem 'uglifier', '~> 2.3.1'
 gem 'jquery-rails', '~> 3.0.4'
 gem 'jquery_mobile_rails', '~> 1.3.2'
 
@@ -16,9 +19,8 @@ gem 'whenever', '~> 0.8.4', :require => false
 gem 'geokit', '~> 1.6.7'
 gem 'geokit-rails', '~> 2.0.0'
 
-# Assets
-gem 'sass-rails', '~> 4.0.1'
-gem 'uglifier', '~> 2.3.1'
+# Performance measuring
+# gem 'rack-mini-profiler', '~> 0.1.31'
 
 group :test do
   gem "capybara", "~> 2.1.0"
