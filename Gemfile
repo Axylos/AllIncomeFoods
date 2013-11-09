@@ -1,13 +1,13 @@
 source 'http://rubygems.org'
 
-gem 'rails', '~> 3.2.15'
+gem 'rails', '~> 4.0.1'
 gem 'pg', '~> 0.17.0'
 
 gem 'jquery-rails', '~> 3.0.4'
 gem 'jquery_mobile_rails', '~> 1.3.2'
 
 # Keep around until RetailersController#get_geo_from_google is removed
-gem 'crack', '~> 0.1.8'
+gem 'crack', '~> 0.4.1'
 
 # Automated cron jobs
 gem 'whenever', '~> 0.8.4', :require => false
@@ -16,10 +16,9 @@ gem 'whenever', '~> 0.8.4', :require => false
 gem 'geokit', '~> 1.6.7'
 gem 'geokit-rails', '~> 2.0.0'
 
-group :assets do
-  gem 'sass-rails', '~> 3.2.6'
-  gem 'uglifier', '>= 1.0.3'
-end
+# Assets
+gem 'sass-rails', '~> 4.0.1'
+gem 'uglifier', '~> 2.3.1'
 
 group :test do
   gem "capybara", "~> 2.1.0"
